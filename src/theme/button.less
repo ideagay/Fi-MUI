@@ -1,0 +1,48 @@
+@import './common/var.less';
+@import './common/mixin.less';
+
+.fi-button{
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    box-sizing: border-box;
+    white-space: nowrap;
+    line-height: 1;
+    outline: none;
+    margin: 0;
+    border-radius: @button-border-radius;
+    // type
+    &.fi-button--default{
+        background: #fff;
+        color: @button-color;
+        .border(@button-border-color);
+        &:after{
+            border-radius: @button-border-radius * 2;
+        }
+    }
+    &.fi-button--primary,&.fi-button--success{
+        background: @color-primary;
+        color: #fff;
+        .border(transparent);
+        &:after{
+            border-radius: @button-border-radius * 2;
+        }
+    }
+    &.fi-button--success{
+        background: @color-success;
+    }
+    // size
+    &.fi-button--small{
+        
+    }
+    &.fi-button--normal{
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    &.fi-button--large{
+        width: 100%;
+        padding: 12px 0;
+        display: block;
+        font-size: 16px;
+    }
+}

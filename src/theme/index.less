@@ -1,0 +1,118 @@
+.fi-button {
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  line-height: 1;
+  outline: none;
+  margin: 0;
+  border-radius: 4px;
+}
+.fi-button.fi-button--default {
+  background: #fff;
+  color: #1a1a1a;
+  position: relative;
+  border: none;
+}
+.fi-button.fi-button--default:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #b8bbbf;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: left top;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  .fi-button.fi-button--default:after {
+    width: 150%;
+    height: 150%;
+    transform: scale(0.66666);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .fi-button.fi-button--default:after {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3) {
+  .fi-button.fi-button--default:after {
+    width: 300%;
+    height: 300%;
+    transform: scale(0.33333);
+  }
+}
+.fi-button.fi-button--default:after {
+  border-radius: 8px;
+}
+.fi-button.fi-button--primary,
+.fi-button.fi-button--success {
+  background: #508CEE;
+  color: #fff;
+  position: relative;
+  border: none;
+}
+.fi-button.fi-button--primary:after,
+.fi-button.fi-button--success:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid transparent;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: left top;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  .fi-button.fi-button--primary:after,
+  .fi-button.fi-button--success:after {
+    width: 150%;
+    height: 150%;
+    transform: scale(0.66666);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .fi-button.fi-button--primary:after,
+  .fi-button.fi-button--success:after {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3) {
+  .fi-button.fi-button--primary:after,
+  .fi-button.fi-button--success:after {
+    width: 300%;
+    height: 300%;
+    transform: scale(0.33333);
+  }
+}
+.fi-button.fi-button--primary:after,
+.fi-button.fi-button--success:after {
+  border-radius: 8px;
+}
+.fi-button.fi-button--success {
+  background: #67c23a;
+}
+.fi-button.fi-button--normal {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+.fi-button.fi-button--large {
+  width: 100%;
+  padding: 12px 0;
+  display: block;
+  font-size: 16px;
+}
