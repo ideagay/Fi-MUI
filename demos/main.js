@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import '../src/theme/index.less';
+import '../lib/theme/button.css';
 import FiUI from '../src/index';
 import App from './App.vue';
 import router from './router/index';

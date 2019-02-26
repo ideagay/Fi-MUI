@@ -15,7 +15,7 @@
     &.fi-button--default{
         background: #fff;
         color: @button-color;
-        .border(@button-border-color);
+        #border.round(@button-border-color);
         &:after{
             border-radius: @button-border-radius * 2;
         }
@@ -23,7 +23,7 @@
     &.fi-button--primary,&.fi-button--success{
         background: @color-primary;
         color: #fff;
-        .border(transparent);
+        #border.round(transparent);
         &:after{
             border-radius: @button-border-radius * 2;
         }

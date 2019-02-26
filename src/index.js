@@ -1,4 +1,4 @@
-import Button from './button/index';
+import Button from '../packages/button/index';
 
 const components = {
     Button
