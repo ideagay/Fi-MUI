@@ -24,6 +24,9 @@ function wrap(render) {
 module.exports = {
     configureWebpack: {
         entry: './demos/main.js',
+        output: {
+          libraryExport: 'default'
+        },
         resolve: {
             extensions: ['.js', '.vue', '.json'],
             alias: {
