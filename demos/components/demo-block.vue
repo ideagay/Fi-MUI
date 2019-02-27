@@ -60,6 +60,7 @@
         }
         code.hljs {
           margin: 0;
+          padding: 0;
           border: none;
           max-height: none;
           border-radius: 0;

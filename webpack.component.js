@@ -27,6 +27,11 @@ const webpackConfig = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                include: [path.resolve(process.cwd(), './src')]
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {

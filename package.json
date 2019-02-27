@@ -1,7 +1,7 @@
 {
   "name": "financial-mui",
   "version": "0.1.0",
-  "main": "lib/financial-mui.common.js",
+  "main": "lib/index.js",
   "files": [
     "lib",
     "src"
@@ -18,7 +18,8 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "vue": "^2.6.6",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "webpack-library": "file:../webpack-libraryTarget-demo"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
